@@ -1,0 +1,47 @@
+#container{
+    display: flex;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+#container #diya{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    right: 30px;
+}
+#mainhead{
+    font-family: Inter;
+    font-size: 100px;
+    color: white;
+}
+#mainborder{
+    display: flex;
+    border: 10px solid white;
+    height: 200px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    animation:ColorChangingBorder 2s infinite;
+}
+@keyframes ColorChangingBorder{
+    0%{
+        border-top: 10px solid blue;
+        border-left: 10px solid blue;
+    }
+    100%{
+        border-bottom:10px solid blue;
+        border-right: 10px solid blue;
+    }
+}
+#container #wishes {
+    height: 700px;
+    width: 1000px;
+    position: relative;
+    top: 300px;
+}
